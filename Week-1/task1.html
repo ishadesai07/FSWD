@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<head>
+    <title>Variable and DataType</title>
+</head>
+<body>
+    <button onclick="myFun()"> Click me!! </button><br>
+    <div id="demo"></div><br>
+    <script>
+        function myFun(){
+            //Use of var keyword
+            var num1=18;
+            var num2=75;
+            var result=num1+num2;
+            console.log(result);
+
+            //Use of let keyword
+            let firstName="Rihaan";
+            let lastName="Oberoi";
+            let name=firstName.concat(" ",lastName);
+            console.log(name);
+
+            //Use of const keyword
+            const arr=[15,'Ahmedabad',35,'Surat']
+            console.log(arr);
+
+            //Display content
+            var outputElement = document.getElementById("demo");
+            outputElement.innerHTML = "Using Var keyword and Integer datatype: "+ result + "<br>";
+            outputElement.innerHTML += "Using Let keyword and String datatype: "+ name + "<br>";
+            outputElement.innerHTML += "Using Const keyword and Array datatype: "+ arr + "<br>";
+        }
+    </script>
+</body>
+</html>
